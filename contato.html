@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/contato.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" type="imagem/x-icon" href="../fotos/LOGO.png" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header class="header1">
+      <nav>
+        <a class="logo" href="./index.html">LOGO</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="./agendar.html">Agendar</a></li>
+          <li><a href="./servico.html">Serviços</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a class="conta" href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="r1 item1">Watshapp</div>
+
+      <div class="r2 item2">
+        <h1 class="instruçãoC">
+          Entre em contato para tirar sua dúvida,ou mandar sugestões!
+        </h1>
+        <div class="formCo">
+          <form class="form" method="POST" action="../PHP/email.php">
+            <input class="field" name="nome" placeholder="Nome" />
+            <input class="field" name="email" placeholder="E-mail" />
+            <textarea
+              class="field"
+              name="mensagem"
+              placeholder="Digite sua mensagem aqui."
+            ></textarea>
+            <input class="field" type="submit" vaue="Enviar" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footerF">
+      <nav>
+        <a class="logo" href="./index.html">LOGO</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-em nav-list">
+          <li><a href="./agendar.html">Agendar</a></li>
+          <li><a href="./servico.html">Serviço</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a class="conta" href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <section class="end">
+      <hr
+        style="
+          height: 2px;
+          border-width: 0;
+          color: gray;
+          background-color: white;
+        "
+      />
+      <p>Copyright © WM-Instituto de beleza. Todos os Direitos Reservados.</p>
+    </section>
+    <script src="./SCRIPT/script.js"></script>
+  </body>
+</html>

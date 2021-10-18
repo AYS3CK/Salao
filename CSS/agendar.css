@@ -1,0 +1,500 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Axiforma/Axiforma-Regular.otf") format("opentype");
+}
+
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: "Axiforma";
+}
+/* cabeçalho */
+.agenda:visited {
+  color: orange;
+}
+
+a {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #333438;
+  height: 15vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #f2f2f2;
+  margin: 8px;
+  transition: 0.3s;
+}
+/* text grid 1 */
+.AgendarConosco {
+  text-align: left;
+  /* display: block; */
+  margin-left: 11.5%;
+  margin-top: 100px;
+  font-size: 1.6rem;
+}
+.textoI{
+  text-align: left;
+  margin-left: 11.5%;
+  margin-top: 5vh;
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+.TelefoneC{
+  display: inline-block;
+  margin-left: 11%;
+  margin-top: 15vh;
+  width: 400px;
+  font-size: 1.3rem;
+}
+/* Relógios de mrcar */
+.HorarioF{
+    position: absolute;
+    list-style: none;
+    margin-top: 25vh;
+    margin-left: 70%;
+}
+
+.fa-clock-o{
+  display: inline-block;
+ color: orange;
+}
+
+.horarioT{
+  margin-left: 10px;
+  display: inline-block;
+
+}
+/* cel */
+
+.iphoneB{
+  border-radius: 25px;
+  margin-top: 90px;
+  margin-left: 44.6%;
+  position: absolute;
+  width:25vh;
+  height: 50vh;
+  border: 10px solid black;
+}
+.iphoneM{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  border-top: none;
+  margin-top: 0px;
+  margin-left: 39px;
+  position: absolute;
+  width: 12vh;
+  height: 1vh;
+  border: 6px solid black;
+}
+
+.micT{
+  background-color: gray;
+  border-radius: 25px;
+  margin-top: 2px;
+  margin-left: 69px;
+  position: absolute;
+  width: 5vh;
+  height: 0.5vh;
+  border: 1px solid gray;
+}
+.whatsappL {
+  margin-top: 270px;
+  margin-left: 60px;
+  width: 57px;
+  height: 57px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  display: inline-block;
+  /* z-index: 1; */
+}
+
+.fa-whatsapp {
+  margin-top: 13px;
+}
+/* grid 2 */
+
+
+
+
+.equipeToda {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.e1 {
+  width: 17%;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-left: 1%;
+}
+
+.e2 {
+  width: 17%;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+
+.e3 {
+  width: 17%;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+
+.e4 {
+  width: 17%;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+
+.e5 {
+  width: 17%;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: 100px;
+}
+
+/* grids */
+
+.container {
+  display: grid;
+  background-color: #333438;
+  grid-gap: 2px 2px;
+  grid-template:550px 425px/ 2fr;
+  grid-template-areas:
+    "a1 a1"
+    "a2 a2";
+}
+
+:root {
+  --var-color: #f2f2f2;
+  --var-color2: black;
+}
+
+.r1 {
+  grid-area: a1;
+  background-color: var(--var-color);
+}
+
+.r2 {
+  grid-area: a2;
+  background-color: var(--var-color);
+}
+
+/*end*/
+.end {
+  color: #f2f2f2;
+  background-color: #333438;
+  padding: 50px;
+  text-align: center;
+}
+/* media 1 */
+@media (max-width: 1090px) {
+  .container {
+    display: grid;
+    background-color: #333438;
+    grid-template: 500px / 2fr;
+    grid-template-areas:
+      "a1 a1"
+      "a1 a1"
+      "a2 a2";
+  }
+
+  :root {
+    --var-color: #f2f2f2;
+    --var-color2: black;
+  }
+
+  .r1 {
+    grid-area: a1;
+    background-color: var(--var-color);
+  }
+
+  .r2 {
+    /* display: none; */
+    grid-area: a2;
+    background-color: var(--var-color);
+  }
+.AgendarConosco{
+  margin-left: 7%;
+  transition: ease all .5s;
+}
+.textoI{
+  margin-left: 7%;
+  transition: ease all .5s;
+}
+
+.TelefoneC{
+  margin-left: 7%;
+  transition: ease all .5s;
+}
+
+}
+/* media 2  */
+@media (max-width: 980px) {
+
+  .AgendarConosco{
+    margin-left: 4%;
+    transition: ease all .5s;
+  }
+  .textoI{
+    margin-left: 4%;
+    transition: ease all .5s;
+  }
+  
+  .TelefoneC{
+    margin-left: 4%;
+    transition: ease all .5s;
+  }
+/* media 3 */
+@media (max-width:911px){
+/* cel */
+.iphoneB{
+  margin-left: 15%;
+  transition: ease all .5s;
+
+}
+
+  .AgendarConosco{
+   display: none;
+  }
+  .textoI{
+  display: none;
+  }
+  
+  .TelefoneC{
+    display: none;
+
+  }
+  /* horarios */
+  .HorarioF{
+    position: absolute;
+    list-style: none;
+    margin-top: 25vh;
+    margin-left: 50%;
+    transition: ease all .5s;
+
+}
+
+.fa-clock-o{
+  display: inline-block;
+ color: orange;
+}
+
+.horarioT{
+  margin-left: 10px;
+  display: inline-block;
+
+}
+
+}
+
+
+}
+/* media 5*/
+@media (max-width: 660px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 50vw;
+    height: 70vh;
+    background: #333438;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    /* transition: transform 0.3s ease-in; */
+    z-index: 1;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .nav-em{
+    display:none;
+  }
+  .menu-em{
+    display: none;
+  }
+/* grid */
+.container {
+  display: grid;
+  grid-template: 530px 800px/ 1fr;
+  grid-template-areas:
+    "a1"
+    "a2"
+}
+
+:root {
+  --var-color: #f2f2f2;
+  --var-color2: black;
+}
+
+.r1 {
+  grid-area: a1;
+  background-color: var(--var-color);
+}
+
+.r2 {
+  grid-area: a2;
+  background-color: var(--var-color);
+}
+/* primeiro texto */
+.AgendarConosco{
+  margin-top: 10px;
+  margin-left: 5%;
+  font-size: 2.5rem;
+  width: 250px;
+}
+
+  /* nav em baixo */
+
+
+.equipeToda{
+  display: block;
+
+}
+.e1{  
+  transition: ease-out all .5s;
+  margin-top: 15px;
+  margin-left: 25%;
+  width: 250px;
+}
+.e2{
+  transition: ease-out all .5s;
+  margin-top: 15px;
+  margin-left: 25%;
+  width: 250px;
+}
+.e3{
+  transition: ease-out all .5s;
+  margin-top: 15px;
+  margin-left: 25%;
+  width: 250px;
+}
+.e4{
+  transition: ease-out all .5s;
+  display: none;
+  margin-top: 15px;
+  margin-left: 25%;
+  width: 250px;
+}
+.e5{
+  transition: ease-out all .5s;
+  display: none;
+  margin-top: 15px;
+  margin-left: 25%;
+  width: 250px;
+}
+}
+/* media 6 */
+@media (max-width: 557px) {
+
+  .iphoneB{
+    margin-left: 30%;
+    transition: ease all .5s;
+
+  }
+
+  .HorarioF{
+    display: none;
+    transition: ease-in all .5s;
+
+  }
+
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
